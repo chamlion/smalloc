@@ -1,0 +1,11 @@
+add_library(
+    smalloc
+    src/smalloc.cpp
+    tlsf/tlsf.c
+)
+target_include_directories(
+    smalloc
+PRIVATE
+    include
+    tlsf
+)
